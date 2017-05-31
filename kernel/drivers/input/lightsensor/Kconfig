@@ -1,0 +1,18 @@
+menuconfig LIGHT_SENSOR_DEVICE
+    bool "light_sensor device support"
+    default y
+    help
+      Enable this to be able to choose the drivers for controlling the
+      light_sensor on some platforms, for example on PDAs.
+
+#if LIGHT_SENSOR_DEVICE
+
+config LIGHTSENSOR_ADC
+    bool "adc081C027"
+    depends on LIGHT_SENSOR_DEVICE
+    default y
+    help     
+      Enable this to be able to choose the drivers for controlling the
+      light_sensor on some platforms, for example on PDAs.
+
+#endif

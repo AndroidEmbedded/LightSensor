@@ -1,0 +1,5 @@
+#
+# Input device configuration
+#
+
+source "drivers/input/lightsensor/Kconfig"
